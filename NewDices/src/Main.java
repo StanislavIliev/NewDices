@@ -59,6 +59,12 @@ public class Main {
 	private static double winAtSecondChane(Integer key, Integer value) {
 		double chanceOfWin = 0;
 		chanceOfWin = (double) value / 36 * value / (value + 6);
+		
+		// probability of win on the each of the mentioned numbers needs to be added to the total.
+		// The chance of 4 to win on the second throw is = (chance of current number /of total throws which is 36)*
+		//(chance of current number / (chance of current number+chance of 7)) 
+		// It is believed that second throw will reach the current or 7 at some point. 
+		// Then we calculate that the are 100% of chance of second throw ignoring the other results as they do no matter.
 		return chanceOfWin;
 	}
 }
