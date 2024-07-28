@@ -64,7 +64,7 @@ public class Main {
 		// The chance of 4 to win on the second throw is = (chance of current number /of total throws which is 36)*
 		//(chance of current number / (chance of current number+chance of 7)) 
 		// It is believed that second throw will reach the current or 7 at some point. 
-		// Then we calculate that the are 100% of chance of second throw ignoring the other results as they do no matter.
+		// Then we calculate that they(current number and 7) are 100% of chance of second throw ignoring the other results as they do no matter.
 		return chanceOfWin;
 	}
 }
